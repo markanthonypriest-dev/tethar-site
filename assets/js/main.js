@@ -26,7 +26,7 @@
   // then paste your endpoint below, e.g.
   //   var WAITLIST_ENDPOINT = 'https://formspree.io/f/abcdwxyz';
   // Until this is set, sign-ups are saved in the browser only (not emailed to you).
-  var WAITLIST_ENDPOINT = '';
+  var WAITLIST_ENDPOINT = 'https://formspree.io/f/mlgqojlk';
   // ─────────────────────────────────────────────────────────────
   // Any number of waitlist forms (hero + closing section) share this handler.
   function markJoined() { try { localStorage.setItem('tethar.waitlist.joined', '1'); } catch (e) {} }
