@@ -191,9 +191,12 @@ h4 { line-height: 1.32; letter-spacing: -.005em; }
     radial-gradient(50% 60% at 50% 110%, rgba(99, 102, 241, .10), transparent 60%);
 }
 .hero-grid {
-  display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center;
+  display: grid; grid-template-columns: 1fr; justify-items: center; text-align: center;
 }
-.hero-copy { max-width: 620px; }
+.hero-copy { max-width: 680px; }
+.hero-copy .hero-waitlist-wrap { margin-inline: auto; }
+.hero-copy .hero-waitlist { justify-content: center; }
+.hero-copy .hero-trust { justify-content: center; }
 .hero h1 { margin-top: 20px; }
 .hero h1 em { font-style: normal; }
 .hero .lead { margin-top: 22px; max-width: 540px; }
@@ -638,3 +641,13 @@ h4 { line-height: 1.32; letter-spacing: -.005em; }
 .hs-dock { margin-top: 12px; background: rgba(255, 255, 255, .15); border-radius: 22px; padding: 9px 8px; display: flex; justify-content: space-around; }
 .hs-dock .hs-app small { display: none; }
 .hs-dock .hs-ic { box-shadow: none; }
+
+/* ----------  Live waitlist counter  ---------- */
+.wl-counter { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; font-size: .92rem; font-weight: 600; color: var(--text-soft); }
+.wl-counter b { color: var(--purple-600); font-weight: 800; }
+.wl-counter .wl-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34, 197, 94, .18); animation: wlpulse 2s ease-in-out infinite; }
+@keyframes wlpulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.hero-copy .wl-counter { justify-content: center; }
+.wl-counter--dark { color: rgba(246, 247, 255, .82); }
+.wl-counter--dark b { color: #fff; }
+.cta-band .wl-counter { justify-content: center; margin-inline: auto; }
