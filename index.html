@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tethar — Android Parental Control App for a Safe Child Phone</title>
+<meta name="description" content="An Android parental control app built by parents: screen-time limits, web filtering, approved apps, location and reports. 30 days free, then £5/month or £47.50/year.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="keywords" content="parental control app, Android parental controls, child phone safety, screen time app, web filtering, app approval, family location tracking, safe smartphone for kids">
+<meta name="author" content="Halo Apps Ltd">
+<link rel="canonical" href="https://www.tethar.com/">
+<meta name="theme-color" content="#6A1B87">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tethar">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://www.tethar.com/">
+<meta property="og:title" content="Tethar — Android Parental Control App for a Safe Child Phone">
+<meta property="og:description" content="Every feature, every child, one price. 30 days free, then £5 a month or £47.50 a year — cancel any time in Google Play.">
+<meta property="og:image" content="https://www.tethar.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tethar — Connected safely">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tethar — Android Parental Control App for a Safe Child Phone">
+<meta name="twitter:description" content="Every feature, every child, one price. 30 days free, then £5 a month or £47.50 a year — cancel any time in Google Play.">
+<meta name="twitter:image" content="https://www.tethar.com/assets/img/og-image.png">
+<link rel="stylesheet" href="assets/css/fonts.css?v=1">
+<link rel="stylesheet" href="assets/css/styles.css?v=17">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%2320b5b6' stroke-width='3'%3E%3Cellipse cx='18' cy='30' rx='11' ry='7' transform='rotate(-18 18 30)'/%3E%3Cellipse cx='29' cy='29' rx='7' ry='5.5' transform='rotate(20 29 29)'/%3E%3C/g%3E%3Cg fill='%2320b5b6'%3E%3Ccircle cx='16' cy='12' r='5.2'/%3E%3Ccircle cx='29' cy='16' r='3.7'/%3E%3Ccircle cx='38' cy='24' r='2.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.tethar.com/#organization",
+      "name": "Tethar",
+      "legalName": "Halo Apps Ltd",
+      "url": "https://www.tethar.com/",
+      "logo": "https://www.tethar.com/assets/img/tethar-logo-full.png",
+      "image": "https://www.tethar.com/assets/img/og-image.png",
+      "email": "support@tethar.com",
+      "description": "Android parental control app built by parents, for parents.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "addressCountry": "GB"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tethar.com/#website",
+      "url": "https://www.tethar.com/",
+      "name": "Tethar",
+      "description": "A safe smartphone for every child.",
+      "publisher": { "@id": "https://www.tethar.com/#organization" },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Tethar",
+      "operatingSystem": "Android",
+      "applicationCategory": "SecurityApplication",
+      "description": "Parental control app for Android: screen-time limits, web filtering, approved apps, location alerts and activity reports, managed from a paired parent app.",
+      "url": "https://www.tethar.com/",
+      "publisher": { "@id": "https://www.tethar.com/#organization" },
+      "offers": [
+        { "@type": "Offer", "name": "Monthly", "price": "5.00", "priceCurrency": "GBP" },
+        { "@type": "Offer", "name": "Annual", "price": "47.50", "priceCurrency": "GBP" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Tethar only on Android?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We build only for Android so we can protect it as fully as possible - on Android a parental control app can manage which apps run, filter the web through our own browser and work quietly in the background. iPhone isn't supported yet, though iOS is on our roadmap." }
+        },
+        {
+          "@type": "Question",
+          "name": "How many children can I add?",
+          "acceptedAnswer": { "@type": "Answer", "text": "As many as you like. Every plan includes unlimited children at one price - add each child and manage them all from a single parent dashboard." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my child know it's installed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tethar is designed to be transparent, not sneaky. It keeps the phone looking and feeling normal rather than hiding - we believe healthy digital habits are built on trust, and you decide how much to involve your child." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is my family's data handled?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Data integrity is of the utmost importance to us. Data is only ever visible to you, and never sold. We collect the minimum needed to keep your child safe." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can two parents manage the same child?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Co-parenting is built in - invite another parent or guardian to share access to your dashboard so you're both kept in the loop." }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after the 30 days?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You get 30 days free. On day 31, billing begins via Google Play - £5 a month or £47.50 a year - unless you cancel first. You can cancel any time in Google Play, in two taps, and we never see your card." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I cancel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cancel any time in Google Play, in two taps - the same place you signed up. Billing runs through Google Play, so we never see your card and there's nothing to phone or email about." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/tethar-logo-h.png" alt="Tethar — Connected safely" class="brand-logo" width="847" height="226">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="why-now.html">Why now</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="index.html#waitlist" class="btn btn-primary">Join the waitlist</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill"><span class="dot"></span> Launching this autumn · <b>join the waitlist</b></span>
+      <h1>Made to keep <span class="text-grad">children safe</span> on their smartphones.</h1>
+      <p class="lead">Tethar keeps your child's Android phone safe while it still feels like a regular smartphone. Join the waitlist for early access and a founding‑member <strong>45‑day free trial</strong>.</p>
+      <div class="hero-waitlist-wrap">
+        <form class="hero-waitlist js-waitlist" novalidate>
+          <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-label="Your email address">
+          <button type="submit" class="btn btn-primary btn-lg">Join the waitlist</button>
+        </form>
+        <p class="hero-waitlist-note js-waitlist-note">First 500 parents get the founding offer · No spam — one email at launch.</p>
+        <div class="wl-success js-waitlist-success" hidden>
+          <p class="wl-success-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> You're on the list — your founding 45‑day free trial is reserved.</p>
+          <p class="wl-success-next">We launch this autumn. We'll email you when your early access is ready — nothing in between but the occasional build update.</p>
+          <a class="wl-share" href="https://wa.me/?text=I%27ve%20joined%20the%20Tethar%20waitlist%20%E2%80%94%20a%20safer%20smartphone%20for%20kids%2C%20launching%20this%20autumn.%20Join%20me%3A%20https%3A%2F%2Fwww.tethar.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l1.8.9c.3.1.5.2.5.4.1.2.1.7-.1 1.3Z"/></svg> Tell a parent friend on WhatsApp</a>
+        </div>
+      </div>
+      <ul class="hero-trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Founding 45‑day free trial — members only</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Early access before public launch</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> A say in the app roadmap</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="phone phone--shot phone-float">
+        <div class="phone-screen">
+          <img src="assets/img/app-parent-location.jpg" alt="The Tethar parent app showing app usage for the week and your child's location on a map." width="640" height="1387" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IN THE HEADLINES ============ -->
+<section class="media-strip" aria-label="Child online safety in the news">
+  <div class="container">
+    <span class="ms-label">Child online safety, in the headlines</span>
+    <a href="https://www.bbc.co.uk/news/articles/c5yzn2g0xw9o" target="_blank" rel="noopener">BBC News</a>
+    <a href="https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-to-protect-children-online" target="_blank" rel="noopener">Ofcom</a>
+    <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10468/" target="_blank" rel="noopener">UK Parliament</a>
+    <a href="why-now.html">See the evidence →</a>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="strip">
+  <div class="container">
+    <p>Designed around the standards families trust</p>
+    <div class="strip-logos">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 5 6v5c0 4 2.7 7.4 7 8.7 4.3-1.3 7-4.7 7-8.7V6z"/></svg> GDPR&nbsp;Ready</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m9 12 2 2 4-4"/></svg> Age-Appropriate&nbsp;Design, tailored&nbsp;to&nbsp;your&nbsp;child</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg> UK&nbsp;Registered&nbsp;Company</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE BALANCE ============ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The balance</span>
+      <h2>The answer isn't a <span class="text-grad">brick phone</span></h2>
+      <p class="lead">Children don't want to be cut off from their friends and the world — and they shouldn't have to be. A smartphone is how they find their way, look things up and learn. The goal isn't to take that away; it's to give them today's world while keeping them safe in it.</p>
+      <p class="lead" style="margin-top:12px;font-size:1rem">Just a few examples of the apps and everyday functionality a modern phone gives a child — the very things an older "brick" phone simply doesn't have:</p>
+    </div>
+    <div class="grid features-grid">
+      <article class="card i-4 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20 3 17V4l6 3 6-3 6 3v13l-6-3-6 3Z"/><path d="M9 7v13M15 4v13"/></svg></div>
+        <h3>Finding their way</h3>
+        <p>Maps to get to school, a friend's house or the right bus — the everyday independence that a basic phone can't give them.</p>
+      </article>
+      <article class="card i-1 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></div>
+        <h3>Looking things up</h3>
+        <p>Homework, curiosity, keeping up with the world — a safely filtered web is one of the main ways children learn today.</p>
+      </article>
+      <article class="card i-2 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
+        <h3>Learning and growing</h3>
+        <p>Educational apps like Duolingo, reading and revision tools — the good things a locked‑down phone would shut out along with the bad.</p>
+      </article>
+    </div>
+    <p style="text-align:center;color:var(--text-soft);max-width:660px;margin:34px auto 0" class="reveal">A basic "brick" phone keeps children safe by cutting them off. Tethar does the opposite: it keeps everything good about a modern smartphone, and quietly removes what isn't — so the balance tips towards access <em>and</em> safety, not one at the cost of the other.</p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Everything you need</span>
+      <h2>Protection that respects your child's <span class="text-grad">independence</span></h2>
+      <p class="lead">Seven thoughtfully-built tools that work quietly in the background — no red flags on the phone, no awkward conversations.</p>
+    </div>
+    <div class="grid features-grid">
+      <article class="card i-7 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/><path d="M17.2 3.1l.5 1.3 1.3.5-1.3.5-.5 1.3-.5-1.3-1.3-.5 1.3-.5z"/></svg></div>
+        <h3>Feels like their own phone</h3>
+        <p>Most important of all: the phone looks, feels and behaves like a regular smartphone — fully customisable just like normal. They won’t really notice that it is there when using it.</p>
+      </article>
+      <article class="card i-1 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Screen time management</h3>
+        <p>Set daily limits and app-specific schedules. Wind-down for bedtime, focus hours for school — all customisable per child.</p>
+      </article>
+      <article class="card i-2 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></div>
+        <h3>Smart web filtering</h3>
+        <p>Keeps adult, gambling and other unsafe sites off‑limits through the dedicated Tethar browser — with only the sites you allow and trust let through.</p>
+      </article>
+      <article class="card i-3 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
+        <h3>App approvals</h3>
+        <p>Only pre-approved apps run. When your child wants something new, they send a request — you approve or decline in a tap.</p>
+      </article>
+      <article class="card i-4 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+        <h3>Location &amp; safe places</h3>
+        <p>Know where they are, with a gentle alert when they reach or leave the places that matter if you want it — school, home or any other place that matters to you.</p>
+      </article>
+      <article class="card i-5 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H4z"/><path d="M4 20h16M8 9l2.5 2.5L16 6"/></svg></div>
+        <h3>Clear reporting</h3>
+        <p>A tailored digest of usage across web activity, search terms, call history, SMS content and geographic locations — insight without surveillance, so you can start the right conversations if you need to.</p>
+      </article>
+      <article class="card i-6 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.6"/><path d="M17.5 14a5 5 0 0 1 4 2"/></svg></div>
+        <h3>Multi-child & co-parenting</h3>
+        <p>Manage every child from one dashboard and share access with a co-parent or more, so you're always on the same page.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE TOUR ============ -->
+<section class="section tour-section" id="tour">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Take a look inside</span>
+      <h2>An interactive tour of the parent app</h2>
+      <p class="lead">Walk through the real app at your own pace — the home dashboard, app access, downtime, time limits, safe places, internet filtering and more.</p>
+    </div>
+    <div class="tour-embed reveal">
+      <iframe id="tourFrame" src="tour.html" title="Tethar — an interactive tour of the parent app" loading="lazy" scrolling="no"></iframe>
+    </div>
+    <p class="tour-alt"><a href="tour.html" target="_blank" rel="noopener">Open the tour full screen ↗</a></p>
+  </div>
+</section>
+
+<!-- ============ TWO APPS ============ -->
+<section class="section" id="how-it-pairs">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">One system, two apps</span>
+      <h2>A <span class="text-grad">child app</span> that is linked to a <span class="text-grad">parent app</span></h2>
+      <p class="lead">Tethar isn't one app — it's two that pair securely. You install the parent app on your phone to set the boundaries and see the week; the child app lives on your child's phone and quietly keeps it safe. One parent app connects the whole family.</p>
+    </div>
+
+    <div class="twoapp-grid">
+      <!-- Parent app -->
+      <article class="twoapp is-parent reveal">
+        <span class="twoapp-badge parent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4 2.7 7.4 7 8.7 4.3-1.3 7-4.7 7-8.7V6z"/></svg> On your phone</span>
+        <div class="phone phone--shot">
+          <div class="phone-screen">
+            <img src="assets/img/app-parent-home.jpg" alt="The Tethar parent app home dashboard: each child at the top with an Add button, and an app usage breakdown for the last 7 days." width="640" height="1387" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <h3>Tethar Parent</h3>
+        <p>Your calm home base. One parent app connects to every child — set the boundaries, approve requests and see usage and location history at a glance, with multiple parent logins so the whole family stays in the loop.</p>
+        <ul class="twoapp-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Set screen-time, web filters &amp; safe zones</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Approve or decline app requests remotely</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Manage multiple children &amp; co-parents</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> See activity &amp; weekly reports across geographical locations, internet searches, call history and SMS content</li>
+        </ul>
+        <a href="#waitlist" class="btn btn-primary" style="margin-top:24px">
+          Join the waitlist
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <!-- Connector -->
+      <div class="twoapp-link reveal">
+        <div class="line"></div>
+        <div class="pair"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 17H7A5 5 0 0 1 7 7h2M15 7h2a5 5 0 0 1 0 10h-2M8 12h8"/></svg></div>
+        <small>Paired</small>
+        <div class="line"></div>
+      </div>
+
+      <!-- Child app -->
+      <article class="twoapp is-child reveal">
+        <span class="twoapp-badge child"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M11 18h2"/></svg> On their phone</span>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="kid">
+              <div class="kid-top">
+                <div><b>Hi Emily 👋</b><small>2h 46m left today</small></div>
+                <span class="kid-safe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Safe</span>
+              </div>
+              <div class="kid-grid">
+                <div class="kid-app"><div class="kid-tile" style="background:#25D366">💬</div><span>Messages</span></div>
+                <div class="kid-app"><div class="kid-tile" style="background:#1DB954">🎵</div><span>Music</span></div>
+                <div class="kid-app"><div class="kid-tile" style="background:#4285F4">📚</div><span>Homework</span></div>
+                <div class="kid-app"><div class="kid-tile" style="background:#FF7A59">🎨</div><span>Draw</span></div>
+                <div class="kid-app"><div class="kid-tile" style="background:#8B5CF6">📷</div><span>Camera</span></div>
+                <div class="kid-app"><div class="kid-tile" style="background:#0EA5E9">🌤️</div><span>Weather</span></div>
+              </div>
+              <button class="kid-req"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Ask for an app</button>
+            </div>
+          </div>
+        </div>
+        <h3>Tethar for Kids</h3>
+        <p>The child app lives on your child's phone in the background and quietly keeps it safe, whilst looking and feeling like a regular smartphone.</p>
+        <ul class="twoapp-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Shows only the apps you've approved</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Filters the web, keeping unsafe content off‑limits</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Bespoke daily screen-time — for the whole phone and by individual app</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Shares location and sends safe‑place alerts</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Lets your child request new apps in a tap</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Looks and feels like a regular smartphone</li>
+        </ul>
+        <a href="#waitlist" class="btn btn-primary" style="margin-top:24px">
+          Join the waitlist
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Up and running in minutes</span>
+      <h2>Four steps to a safer phone</h2>
+    </div>
+    <div class="grid steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Set up the child's phone</h3>
+        <p>Download the Tethar child app from Google Play onto your child's phone and follow the on-screen setup — about four minutes.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Link your parent phone</h3>
+        <p>Download the Tethar parent app from Google Play onto your own phone and add a new child.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Manage as a family</h3>
+        <p>One parent app links to multiple children's phones — and other parents can join the family too, to set the boundaries and stay across your children's week together.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Adapt to your child</h3>
+        <p>Config is easy to tweak whenever you need — adjust limits, apps and filters in a few taps to adapt to your child as they grow.</p>
+      </div>
+    </div>
+    <p class="center mt-l reveal" style="color:var(--text-soft);max-width:660px;margin-inline:auto">Both apps download free from Google Play. Your first 30 days are free — billing begins on day 31 via Google Play (£5 a month or £47.50 a year), and you can cancel any time in two taps.</p>
+  </div>
+</section>
+
+
+<!-- ============ GROWS WITH YOUR CHILD ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Made to fit</span>
+      <h2>Tailored to your child,<br><span class="text-grad">ready to grow with them</span></h2>
+      <p class="lead">No two children are the same — and none stay the same for long. Tethar is tuned to each child on their own terms, and eases off as they get older and earn more freedom. One app that suits a cautious first phone at eight and a trusted teenager at fifteen.</p>
+    </div>
+    <div class="grid features-grid">
+      <article class="card i-5 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21v-7M5 10V3M12 21v-9M12 5V3M19 21v-5M19 12V3"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="7" r="2"/><circle cx="19" cy="14" r="2"/></svg></div>
+        <h3>Set the right level</h3>
+        <p>Dial protection right up for a younger child's first phone, and ease it back as trust is earned. You decide how much — it's never all-or-nothing.</p>
+      </article>
+      <article class="card i-3 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.6"/><path d="M16.5 20a5 5 0 0 1 5-3"/></svg></div>
+        <h3>Every child, their own way</h3>
+        <p>Screen time, apps, web filtering, downtime and safe places are set for each child individually — so siblings of different ages are never treated the same.</p>
+      </article>
+      <article class="card i-7 reveal">
+        <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
+        <h3>Changes in seconds</h3>
+        <p>As they grow, or as trust builds, adjust any boundary in a tap. The phone grows up with them — you're not starting over every year.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHOWCASE BAND ============ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="showcase reveal">
+      <div class="showcase-grid">
+        <div>
+          <span class="eyebrow" style="color:var(--violet-400)">Why parents choose Tethar</span>
+          <h2>Safety that doesn't feel intrusive</h2>
+          <p class="lead">We built Tethar because, as parents, we're aware of the dangers of smartphones and social media. Once children see something online, they cannot unsee it. We looked around for a tool that would keep our children safe and couldn't find anything that worked in the background while keeping the look and feel of a regular phone. Tethar protects in the background — the phone stays theirs, the reassurance stays yours.</p>
+          <ul class="showcase-list">
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Looks like a normal phone</b><small>No obvious badges or locked-down home screens — it stays theirs.</small></div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>You choose the depth</b><small>Dial protection up for younger kids, back for teens earning trust.</small></div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Data stays private</b><small>Never sold or shared, and only ever visible to you.</small></div></li>
+          </ul>
+          <a href="demo.html" class="btn btn-light btn-lg mt-l">Explore the live demo
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="center">
+          <div class="phone phone--shot" style="width:250px">
+            <div class="phone-screen">
+              <img src="assets/img/app-parent-config.jpg" alt="The Tethar parent app configuration screen, with settings for app access, downtime, app usage limits, location and internet filtering." width="640" height="1387" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Good questions</span>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="faq reveal">
+      <details class="faq-item" open>
+        <summary>Why is Tethar only on Android? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">We build only for Android so we can protect it as fully as possible — on Android a parental‑control app can manage which apps run, filter the web through our own browser and work quietly in the background. iPhone isn't supported yet, though iOS is on our roadmap.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Will my child know it's installed? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">Tethar is designed to be transparent, not sneaky. It keeps the phone looking and feeling normal rather than hiding — we believe healthy digital habits are built on trust, and you decide how much to involve your child.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How is my family's data handled? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">Data integrity is of the utmost importance to us. Data is only ever visible to you, and never sold. We collect the minimum needed to keep your child safe.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can two parents manage the same child? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">Yes. Co-parenting is built in — invite another parent or guardian to share access to your dashboard so you're both kept in the loop.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How many children can I add? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">As many as you like. Every plan includes unlimited children at one price — add each child and manage them all from a single parent dashboard.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens after the 30 days? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">You get 30 days free. On day 31, billing begins via Google Play — £5 a month or £47.50 a year — unless you cancel first. You can cancel any time in Google Play, in two taps, and we never see your card.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I cancel? <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+        <div class="ans">Cancel any time in Google Play, in two taps — the same place you signed up. Billing runs through Google Play, so we never see your card and there's nothing to phone or email about.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WAITLIST ============ -->
+<section class="section" id="waitlist">
+  <div class="container">
+    <div class="cta-band reveal">
+      <span class="badge-soft" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.2)">Founding offer · first 500 parents</span>
+      <h2 class="mt-s">Be first to give your child a safer smartphone</h2>
+      <p class="lead">Join the waitlist to lock in a founding‑member <strong>45‑day free trial</strong> — plus early access and a say in the roadmap. We'll email you the moment Tethar opens.</p>
+      <form class="waitlist-form js-waitlist" id="waitlistForm" novalidate>
+        <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-label="Your email address">
+        <button type="submit" class="btn btn-primary btn-lg">Join the waitlist</button>
+      </form>
+      <p class="waitlist-note js-waitlist-note" id="waitlistNote">First 500 parents get the founding offer · No spam — one email at launch · Unsubscribe anytime.</p>
+      <div class="wl-success js-waitlist-success" id="waitlistSuccess" hidden>
+        <p class="wl-success-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> You're on the list — your founding 45‑day free trial is reserved.</p>
+        <p class="wl-success-next">We launch this autumn. We'll email you when your early access is ready — nothing in between but the occasional build update.</p>
+        <a class="wl-share" href="https://wa.me/?text=I%27ve%20joined%20the%20Tethar%20waitlist%20%E2%80%94%20a%20safer%20smartphone%20for%20kids%2C%20launching%20this%20autumn.%20Join%20me%3A%20https%3A%2F%2Fwww.tethar.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.2.1.4.1.6-.1l.7-.9c.2-.3.4-.2.7-.1l1.8.9c.3.1.5.2.5.4.1.2.1.7-.1 1.3Z"/></svg> Tell a parent friend on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Sticky mobile call-to-action — hides itself when the waitlist section is on screen -->
+<div class="sticky-waitlist" id="stickyWaitlist">
+  <p>Founding 45‑day free trial for waitlist members</p>
+  <a href="#waitlist" class="btn btn-primary">Join the waitlist</a>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand"><img src="assets/img/tethar-logo-full.png" alt="Tethar — Connected safely" class="brand-logo brand-logo--footer" width="620" height="587"></a>
+        <p>A safe smartphone for every child. Built by parents, for parents — protection without prying.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.5 8.6L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8-9.2L1 2h7l4.8 6.3L18.9 2Zm-1.2 18h1.7L7.1 3.8H5.3L17.7 20Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="demo.html">Live demo</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="why-now.html">Why now</a></li><li><a href="contact.html">Contact</a></li><li><a href="index.html#faq">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="cookies.html">Cookie policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Halo Apps Ltd. Company no. 16989292. 71–75 Shelton Street, Covent Garden, London.</span>
+      <span>support@tethar.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+// The embedded tour reports its natural height so the iframe grows to fit it.
+window.addEventListener('message', function (e) {
+  if (e.origin !== window.location.origin) return;
+  var h = e.data && e.data.tetharTourHeight;
+  var frame = document.getElementById('tourFrame');
+  if (h && frame) frame.style.height = h + 'px';
+});
+</script>
+<script src="assets/js/consent.js" defer></script>
+</body>
+</html>

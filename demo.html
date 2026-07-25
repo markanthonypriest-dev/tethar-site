@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Demo — See the Tethar Parental Control App in Action</title>
+<meta name="description" content="Try a working model of the Tethar parent dashboard, then upload your own app screenshots or recordings to demonstrate it inside a realistic device frame.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Halo Apps Ltd">
+<link rel="canonical" href="https://www.tethar.com/demo.html">
+<meta name="theme-color" content="#6A1B87">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tethar">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://www.tethar.com/demo.html">
+<meta property="og:title" content="Live Demo — See the Tethar Parental Control App in Action">
+<meta property="og:description" content="Play with a working model of the parent dashboard — flip the boundaries, approve apps and see it respond.">
+<meta property="og:image" content="https://www.tethar.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tethar — Connected safely">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Live Demo — See the Tethar Parental Control App in Action">
+<meta name="twitter:description" content="Play with a working model of the parent dashboard — flip the boundaries, approve apps and see it respond.">
+<meta name="twitter:image" content="https://www.tethar.com/assets/img/og-image.png">
+<link rel="stylesheet" href="assets/css/fonts.css?v=1">
+<link rel="stylesheet" href="assets/css/styles.css?v=17">
+<link rel="stylesheet" href="assets/css/demo.css?v=6">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%2320b5b6' stroke-width='3'%3E%3Cellipse cx='18' cy='30' rx='11' ry='7' transform='rotate(-18 18 30)'/%3E%3Cellipse cx='29' cy='29' rx='7' ry='5.5' transform='rotate(20 29 29)'/%3E%3C/g%3E%3Cg fill='%2320b5b6'%3E%3Ccircle cx='16' cy='12' r='5.2'/%3E%3Ccircle cx='29' cy='16' r='3.7'/%3E%3Ccircle cx='38' cy='24' r='2.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Tethar Live Demo & App Studio","url":"https://www.tethar.com/demo.html","description":"Interactive demo of the Tethar parent dashboard, plus an upload studio to showcase the app inside a device frame.","publisher":{"@type":"Organization","name":"Tethar","legalName":"Halo Apps Ltd","url":"https://www.tethar.com/","logo":"https://www.tethar.com/assets/img/tethar-logo-full.png"}}
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/tethar-logo-h.png" alt="Tethar — Connected safely" class="brand-logo" width="847" height="226">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="why-now.html">Why now</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="index.html#waitlist" class="btn btn-primary">Join the waitlist</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Live demo &amp; app studio</span>
+    <h1 class="reveal">See Tethar <span class="text-grad">in action</span></h1>
+    <p class="lead reveal">Tethar is two paired apps — a <b>parent app</b> you configure from, and a <b>child app</b> that runs safely on their device. Below is a working model of the <b>parent app</b>: flip the boundaries, approve apps, see the numbers respond. Then use the studio further down to upload your own screenshots, recordings or build and demonstrate either app inside a device frame.</p>
+  </div>
+</section>
+
+<!-- ============ INTERACTIVE DEMO ============ -->
+<section class="section" style="padding-top:20px">
+  <div class="container demo-wrap">
+
+    <!-- Interactive phone -->
+    <div class="demo-phone reveal">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="demo-screen-app">
+            <div class="d-head">
+              <div class="who">
+                <div class="app-avatar">EM</div>
+                <div><small>Child device</small><strong>Emily's phone</strong></div>
+              </div>
+              <div class="app-shield"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4 2.7 7.4 7 8.7 4.3-1.3 7-4.7 7-8.7V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            </div>
+
+            <!-- View: Dashboard -->
+            <div class="d-view active" data-view="dash">
+              <div class="d-ring">
+                <svg viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="10"/>
+                  <circle id="ringArc" cx="60" cy="60" r="50" fill="none" stroke="url(#rg)" stroke-width="10" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="120" transform="rotate(-90 60 60)"/>
+                  <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#20b5b6"/><stop offset="1" stop-color="#9d5bb8"/></linearGradient></defs>
+                  <text id="ringTxt" class="rtxt" x="60" y="58" text-anchor="middle">2h 14m</text>
+                  <text class="rsub" x="60" y="72" text-anchor="middle">OF 3H LIMIT TODAY</text>
+                </svg>
+              </div>
+              <div class="d-card">
+                <div class="label">Protection status</div>
+                <div class="big" id="protCount" style="font-size:1.2rem;color:var(--mint-400)">3 of 4 active</div>
+              </div>
+              <div class="d-card">
+                <div class="label" style="margin-bottom:6px">Quick settings</div>
+                <div class="d-toggle" data-prot>
+                  <span class="ic" style="background:rgba(56,189,248,.16);color:var(--sky-400)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
+                  <div class="tx"><b>Web filtering</b><small>Adult &amp; unsafe kept out</small></div>
+                  <span class="sw on" data-toggle></span>
+                </div>
+                <div class="d-toggle" data-prot>
+                  <span class="ic" style="background:rgba(52,211,153,.16);color:var(--mint-400)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.4"/></svg></span>
+                  <div class="tx"><b>Location</b><small>Live · at school</small></div>
+                  <span class="sw on" data-toggle></span>
+                </div>
+                <div class="d-toggle" data-prot>
+                  <span class="ic" style="background:rgba(129,140,248,.16);color:var(--indigo-400)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                  <div class="tx"><b>Bedtime wind-down</b><small>From 8:30 PM</small></div>
+                  <span class="sw on" data-toggle></span>
+                </div>
+                <div class="d-toggle" data-prot>
+                  <span class="ic" style="background:rgba(251,113,133,.16);color:var(--coral-500)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 8h6M9 12h6"/></svg></span>
+                  <div class="tx"><b>App lock</b><small>Only approved apps</small></div>
+                  <span class="sw" data-toggle></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- View: Apps -->
+            <div class="d-view" data-view="apps">
+              <div class="d-card">
+                <div class="label" style="margin-bottom:4px">Installed apps</div>
+                <div class="d-app-row"><span class="d-app-ic" style="background:#25D366">💬</span><span class="nm">Messages</span><span class="mini ok">Allowed</span></div>
+                <div class="d-app-row"><span class="d-app-ic" style="background:#1DB954">🎵</span><span class="nm">Music</span><span class="mini ok">Allowed</span></div>
+                <div class="d-app-row"><span class="d-app-ic" style="background:#4285F4">📚</span><span class="nm">Homework Hub</span><span class="mini ok">Allowed</span></div>
+                <div class="d-app-row"><span class="d-app-ic" style="background:#FF0000">▶️</span><span class="nm">VideoStream</span><span class="mini blk">Off-limits</span></div>
+              </div>
+              <div class="d-card" id="reqCard">
+                <div class="label" style="margin-bottom:6px">Approval requests</div>
+                <div class="d-app-row" id="reqRow"><span class="d-app-ic" style="background:#000">🎮</span><span class="nm">PixelQuest</span><span class="mini req" id="reqBtn">Approve →</span></div>
+                <div class="label" id="reqEmpty" style="display:none;padding:6px 0;color:var(--mint-400)">✓ All caught up — no pending requests</div>
+              </div>
+            </div>
+
+            <!-- View: Location -->
+            <div class="d-view" data-view="loc">
+              <div class="d-card" style="padding:8px">
+                <div class="d-map">
+                  <div class="grid-lines"></div>
+                  <div class="zone"></div>
+                  <div class="pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg></div>
+                </div>
+              </div>
+              <div class="d-card">
+                <div class="row" style="display:flex;justify-content:space-between"><span class="label">Current location</span><span class="mini ok">Safe zone</span></div>
+                <div class="big" style="font-size:1.05rem;margin-top:4px">Oakwood Primary School</div>
+                <small style="color:rgba(255,255,255,.5);font-size:.7rem">Arrived 8:42 AM · geofence active</small>
+              </div>
+              <div class="d-card">
+                <div class="label">Recent alerts</div>
+                <div style="font-size:.74rem;margin-top:6px;color:rgba(255,255,255,.8)">🟢 Arrived at school · 8:42 AM<br>🟡 Left home · 8:15 AM</div>
+              </div>
+            </div>
+
+            <!-- Tab bar -->
+            <div class="d-tabs">
+              <button class="d-tab active" data-tab="dash"><span class="tabic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></span>Home</button>
+              <button class="d-tab" data-tab="apps"><span class="tabic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 8h6M9 12h6"/></svg></span>Apps</button>
+              <button class="d-tab" data-tab="loc"><span class="tabic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.4"/></svg></span>Map</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explanation panel -->
+    <div class="demo-panel reveal">
+      <div class="demo-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p><b>This is a working preview.</b> Tap the tabs at the bottom of the phone, flip the protection switches and approve the pending app request — the dashboard reacts just like the real product.</p>
+      </div>
+
+      <h2>What you're looking at</h2>
+      <p class="lead" style="margin-top:12px">The Tethar parent app puts every setting one tap away. Here's what each area of the demo does:</p>
+
+      <div class="grid features-grid features-grid--2 mt-m">
+        <div class="card">
+          <div class="card-ic i-1" style="background:var(--grad-brand-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div>
+          <h3>Home dashboard</h3>
+          <p>Screen-time ring, live protection status and quick toggles. Flip a switch and see the status counter update.</p>
+        </div>
+        <div class="card">
+          <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 8h6M9 12h6"/></svg></div>
+          <h3>App access</h3>
+          <p>See what's allowed or off‑limits, and approve a pending request to add it straight to the allowed list.</p>
+        </div>
+        <div class="card">
+          <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.4"/></svg></div>
+          <h3>Location &amp; geofence</h3>
+          <p>A live map view with a safe-zone geofence and the timeline of arrival and departure alerts.</p>
+        </div>
+        <div class="card">
+          <div class="card-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 5 6v5c0 4 2.7 7.4 7 8.7 4.3-1.3 7-4.7 7-8.7V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Always reassuring</h3>
+          <p>Everything stays calm and glanceable — no alarms, just the signal you need, when you need it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP VIDEO ============ -->
+<section class="section" id="app-video" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">See it in action</span>
+      <h2>The real Tethar app, <span class="text-grad">in motion</span></h2>
+      <p class="lead">A screen recording of the actual parent app — real scrolling, real settings, the genuine product from home dashboard to configuration and reports.</p>
+    </div>
+    <div class="video-stage reveal">
+      <div class="phone">
+        <div class="phone-screen video-screen">
+          <video src="assets/video/app-demo.mp4" poster="assets/img/app-demo-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+    <p class="disclaimer reveal" style="margin-top:30px">Recorded from the live app. A child's name and photo are demo placeholders and the account number is blurred for privacy.</p>
+  </div>
+</section>
+
+<!-- ============ REAL APP SCREENS ============ -->
+<section class="section" id="app-screens">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The real app</span>
+      <h2>Take a tour of the <span class="text-grad">real app</span></h2>
+      <p class="lead">Tap through actual screens from the current Tethar parent app — use the arrows, the screen menu, or the app's own buttons to explore.</p>
+    </div>
+    <div class="tour reveal">
+      <div class="tour-stage">
+        <button class="tour-arrow" id="tourPrev" aria-label="Previous screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+        <div class="phone">
+          <div class="phone-screen tour-screen">
+            <img id="tourImg" src="assets/img/app-home.jpg" alt="Tethar parent app screen">
+            <div class="tour-hotspots" id="tourHotspots"></div>
+          </div>
+        </div>
+        <button class="tour-arrow" id="tourNext" aria-label="Next screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+      </div>
+      <div class="tour-caption"><b id="tourTitle">Home dashboard</b><span id="tourDesc">App-usage breakdown, battery, signal and quick actions at a glance.</span></div>
+      <p class="tour-hint">Tip: tap the app's own buttons (the bottom tabs, the config rows, the back arrow) to move around — or use the menu below.</p>
+      <div class="tour-chips" id="tourChips"></div>
+    </div>
+    <p class="disclaimer reveal" style="margin-top:30px">Genuine screenshots from the current Tethar parent-app build. A child's name and photo have been replaced with demo placeholders for privacy.</p>
+  </div>
+</section>
+
+<!-- ============ UPLOAD STUDIO ============ -->
+<section class="section" id="studio" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">App studio</span>
+      <h2>Upload &amp; demonstrate your <span class="text-grad">real app</span></h2>
+      <p class="lead">Drop in screenshots, a screen recording, or your build. Each file is displayed inside a realistic device frame so you can showcase and walk through the app's functionality — right here on the site.</p>
+    </div>
+
+    <div class="reveal" style="max-width:900px;margin-inline:auto">
+      <div class="demo-tablist" role="tablist">
+        <button class="active" data-studio="media">📱 Screens &amp; recordings</button>
+        <button data-studio="build">📦 App build</button>
+      </div>
+
+      <!-- Media uploader -->
+      <div data-studio-panel="media">
+        <label class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/*,video/*" multiple>
+          <div class="dz-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
+          <h3>Drag &amp; drop your app screens here</h3>
+          <p>or <span style="color:var(--indigo-600);font-weight:600;text-decoration:underline">browse your files</span> to upload</p>
+          <div class="types">PNG · JPG · GIF · MP4 · WEBM — added straight into a phone frame</div>
+        </label>
+
+        <div class="uploader-actions">
+          <span class="count">Showcase items: <b id="itemCount">0</b> <span style="color:var(--text-muted)">· images saved on this device</span></span>
+          <button class="btn btn-ghost" id="clearAll" style="display:none">Clear all</button>
+        </div>
+
+        <div class="showcase-gallery" id="gallery"></div>
+        <div class="empty-state" id="emptyState">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          <p>Your uploaded app screens will appear here, each inside its own device frame.</p>
+        </div>
+      </div>
+
+      <!-- Build uploader -->
+      <div data-studio-panel="build" style="display:none">
+        <label class="dropzone" id="buildzone">
+          <input type="file" id="buildInput" accept=".apk,.aab,.zip">
+          <div class="dz-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
+          <h3>Upload your app build</h3>
+          <p>Attach a <b>.apk</b>, <b>.aab</b> or zipped build to catalogue this release for your team</p>
+          <div class="types">Stored as a local reference on this device — nothing is sent to a server</div>
+        </label>
+        <div id="buildList" style="margin-top:24px"></div>
+        <div class="demo-note" style="margin-top:22px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>Want a tappable, installable demo?</b> This static showcase catalogues your build locally. To let visitors run the app live in-browser, host an emulator stream (e.g. Appetize.io) and we can embed it here — <a href="contact.html" style="color:var(--indigo-600);font-weight:600">get in touch</a> and we'll wire it up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2>Ready to protect your family?</h2>
+      <p class="lead">You've seen how Tethar works — start your 30 days free and set it up tonight.</p>
+      <div class="cta-actions">
+        <a href="index.html#waitlist" class="btn btn-primary btn-lg">Join the waitlist</a>
+        <a href="contact.html" class="btn btn-light btn-lg">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="lb-inner"><div class="phone"><div class="phone-screen" id="lbBody"></div></div></div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="brand"><img src="assets/img/tethar-logo-full.png" alt="Tethar — Connected safely" class="brand-logo brand-logo--footer" width="620" height="587"></a>
+        <p>A safe smartphone for every child. Built by parents, for parents — protection without prying.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="demo.html">Live demo</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="why-now.html">Why now</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of service</a></li><li><a href="cookies.html">Cookie policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Halo Apps Ltd. Company no. 16989292. 71–75 Shelton Street, Covent Garden, London.</span>
+      <span>support@tethar.com</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=5"></script>
+<script src="assets/js/demo.js?v=5"></script>
+<script src="assets/js/consent.js" defer></script>
+</body>
+</html>

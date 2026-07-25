@@ -1,0 +1,16 @@
+{
+  "name": "Tethar — Connected safely",
+  "short_name": "Tethar",
+  "description": "Android parental control app built by parents: screen-time limits, web filtering, approved apps, location alerts and activity reports.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F7F4FB",
+  "theme_color": "#6A1B87",
+  "lang": "en-GB",
+  "icons": [
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
