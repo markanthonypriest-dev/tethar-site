@@ -1,104 +1,68 @@
-/* Tethar cookie consent — self-contained, no third-party service.
- *
- * DORMANT BY DESIGN: while the site sets no optional cookies, this shows nothing.
- * It wakes up automatically the moment an analytics (or other optional) script is
- * present, and then blocks that script until the visitor agrees.
- *
- * ── How to add analytics later (e.g. Google Analytics) ──────────────────────────
- *   Paste the provider's snippet like this — note type="text/plain" and the data
- *   attribute. It will NOT run until the visitor clicks "Accept".
- *
- *     <script type="text/plain" data-consent="analytics">
- *       // ...analytics snippet here...
- *     </script>
- *
- *   (or, for an external file:)
- *     <script type="text/plain" data-consent="analytics" src="https://.../gtag.js"></script>
- *
- *   That's it — the banner appears on its own and handles Accept / Reject correctly.
- *   The visitor's choice is remembered in their browser (this is a strictly-necessary
- *   preference, so it needs no consent itself). Reject is exactly as easy as Accept.
- */
-(function () {
-  'use strict';
-  var KEY = 'tethar.consent';          // 'accepted' | 'rejected'
-  var CAT = 'analytics';
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Tethar — Built by Parents, for Parents</title>
+<meta name="description" content="Why we built Tethar: a mission to give every child a safe smartphone, with Android parental controls that protect without prying. Meet the team behind the app.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Halo Apps Ltd">
+<link rel="canonical" href="https://www.tethar.com/about.html">
+<meta name="theme-color" content="#6A1B87">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tethar">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://www.tethar.com/about.html">
+<meta property="og:title" content="About Tethar — Built by Parents, for Parents">
+<meta property="og:description" content="Our mission: a safe smartphone for every child, with parental controls that protect without prying.">
+<meta property="og:image" content="https://www.tethar.com/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tethar — Connected safely">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Tethar — Built by Parents, for Parents">
+<meta name="twitter:description" content="Our mission: a safe smartphone for every child, with parental controls that protect without prying.">
+<link rel="stylesheet" href="assets/css/fonts.css?v=1">
+<link rel="stylesheet" href="assets/css/styles.css?v=18">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%2320b5b6' stroke-width='3'%3E%3Cellipse cx='18' cy='30' rx='11' ry='7' transform='rotate(-18 18 30)'/%3E%3Cellipse cx='29' cy='29' rx='7' ry='5.5' transform='rotate(20 29 29)'/%3E%3C/g%3E%3Cg fill='%2320b5b6'%3E%3Ccircle cx='16' cy='12' r='5.2'/%3E%3Ccircle cx='29' cy='16' r='3.7'/%3E%3Ccircle cx='38' cy='24' r='2.6'/%3E%3C/g%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AboutPage","name":"About Tethar","url":"https://www.tethar.com/about.html","description":"Why we built Tethar - built by parents, for parents, to give every child a safe smartphone.","publisher":{"@type":"Organization","name":"Tethar","legalName":"Halo Apps Ltd","url":"https://www.tethar.com/","logo":"https://www.tethar.com/assets/img/tethar-logo-full.png"}}
+</script>
+</head>
+<body>
 
-  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
-  function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><img src="assets/img/tethar-logo-h.png" alt="Tethar — Connected safely" class="brand-logo" width="847" height="226"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="why-now.html">Why now</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="index.html#waitlist" class="btn btn-primary">Join the waitlist</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
 
-  // Anything optional to consent to on this page?
-  function hasGated() {
-    return !!document.querySelector('script[type="text/plain"][data-consent="' + CAT + '"]')
-        || window.TETHAR_HAS_ANALYTICS === true;
-  }
+<main>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Our story</span>
+    <h1 class="reveal">Built by parents,<br><span class="text-grad">for parents</span></h1>
+    <p class="lead reveal">We started Tethar for the same reason you're here: we wanted our own children to explore the digital world safely, without turning their phones into something that felt overly intrusive and didn't have the regular functionality of a smartphone.</p>
+  </div>
+</section>
 
-  // Turn gated <script type="text/plain"> nodes into live scripts.
-  function activate() {
-    var nodes = document.querySelectorAll('script[type="text/plain"][data-consent="' + CAT + '"]');
-    nodes.forEach(function (old) {
-      var s = document.createElement('script');
-      for (var i = 0; i < old.attributes.length; i++) {
-        var a = old.attributes[i];
-        if (a.name === 'type' || a.name === 'data-consent') continue;
-        s.setAttribute(a.name, a.value);
-      }
-      if (old.src) s.src = old.src; else s.textContent = old.textContent;
-      old.parentNode.replaceChild(s, old);
-    });
-  }
-
-  function hide() { var b = document.getElementById('cookieBar'); if (b) b.remove(); }
-
-  function build() {
-    if (document.getElementById('cookieBar')) return;
-    var bar = document.createElement('div');
-    bar.id = 'cookieBar';
-    bar.className = 'cookie-bar';
-    bar.setAttribute('role', 'dialog');
-    bar.setAttribute('aria-live', 'polite');
-    bar.setAttribute('aria-label', 'Cookie choices');
-    bar.innerHTML =
-      '<div class="cookie-inner">' +
-        '<p class="cookie-text">We’d like to set a few optional cookies to understand how the site is used. ' +
-        'You can accept them, or carry on with only the essential ones. See our <a href="cookies.html">Cookie Policy</a>.</p>' +
-        '<div class="cookie-actions">' +
-          '<button type="button" class="cookie-btn cookie-reject" id="ckReject">Reject optional</button>' +
-          '<button type="button" class="cookie-btn cookie-accept" id="ckAccept">Accept</button>' +
-        '</div>' +
-      '</div>';
-    document.body.appendChild(bar);
-    document.getElementById('ckAccept').addEventListener('click', function () { set('accepted'); activate(); hide(); });
-    document.getElementById('ckReject').addEventListener('click', function () { set('rejected'); hide(); });
-  }
-
-  // Public API — e.g. a "Cookie settings" link can call window.tetharConsent.open()
-  window.tetharConsent = {
-    has: function () { return get() === 'accepted'; },
-    open: function () { build(); },
-    reset: function () { set('rejected'); }   // note: already-loaded scripts need a page reload to fully clear
-  };
-
-  function injectFooterLink() {
-    document.querySelectorAll('.footer-col ul').forEach(function (ul) {
-      if (ul.querySelector('a[href*="cookies"]') && !ul.querySelector('.cookie-settings-link')) {
-        var li = document.createElement('li');
-        var a = document.createElement('a');
-        a.href = '#'; a.className = 'cookie-settings-link'; a.textContent = 'Cookie settings';
-        a.addEventListener('click', function (e) { e.preventDefault(); build(); });
-        li.appendChild(a); ul.appendChild(li);
-      }
-    });
-  }
-
-  function init() {
-    if (!hasGated()) return;            // nothing optional -> stay dormant, no banner
-    var choice = get();
-    if (choice === 'accepted') activate();
-    else if (choice !== 'rejected') build();
-    injectFooterLink();
-  }
-
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
-})();
+<section class="section" style="padding-top:30px">
+  <div class="container">
+    <div class="showcase reveal">
+      <div class="showcase-grid">
+        <div>
+          <span class="eyebrow" style="color:var(--violet-400)">Our mission</span>
+          <h2>A safe smartphone for every child</h2>
+          <p class="lead">Smartphones are the modern way — children learn, play and stay connected with friends and the world. But the same device is a doorway to content and pressures they aren't ready for and don't understand. We believe parents shouldn't have to choose between giving their child freedom, allowing them a smartphone, and keeping them safe.</p>
+          <p class
