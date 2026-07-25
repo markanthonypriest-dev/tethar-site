@@ -618,3 +618,23 @@ h4 { line-height: 1.32; letter-spacing: -.005em; }
   .sticky-waitlist p { flex: 1; font-size: .82rem; font-weight: 600; color: var(--text); line-height: 1.25; margin: 0; }
   .sticky-waitlist .btn { flex: none; padding: .7rem 1.1rem; font-size: .9rem; }
 }
+
+/* ----------  Samsung-style home screen (Tethar for Kids card)  ---------- */
+.phone--home::before { display: none; }
+.phone--home .phone-screen { background: radial-gradient(130% 100% at 22% 4%, #7d6cb6 0%, #4a3a7a 46%, #241533 100%); }
+.hs { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 13px 13px 12px; color: #fff; }
+.hs-status { display: flex; align-items: center; justify-content: space-between; font-size: 9.5px; font-weight: 600; padding: 0 3px; opacity: .95; }
+.hs-status .hs-sys { display: inline-flex; gap: 3px; align-items: center; }
+.hs-status .hs-sys svg { width: 12px; height: 12px; display: block; }
+.hs-clock { text-align: center; margin: 13px 0 8px; }
+.hs-clock b { display: block; font-family: var(--font-display); font-weight: 600; font-size: 33px; line-height: 1; letter-spacing: .5px; }
+.hs-clock span { font-size: 10.5px; opacity: .9; }
+.hs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px 2px; margin-top: auto; }
+.hs-app { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.hs-ic { width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center; box-shadow: 0 4px 9px rgba(0, 0, 0, .28); overflow: hidden; }
+.hs-ic svg { width: 56%; height: 56%; display: block; }
+.hs-ic.full svg { width: 100%; height: 100%; }
+.hs-app small { font-size: 9px; opacity: .96; white-space: nowrap; }
+.hs-dock { margin-top: 12px; background: rgba(255, 255, 255, .15); border-radius: 22px; padding: 9px 8px; display: flex; justify-content: space-around; }
+.hs-dock .hs-app small { display: none; }
+.hs-dock .hs-ic { box-shadow: none; }
