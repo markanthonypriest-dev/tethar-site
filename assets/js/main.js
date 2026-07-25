@@ -28,6 +28,26 @@
   // Until this is set, sign-ups are saved in the browser only (not emailed to you).
   var WAITLIST_ENDPOINT = 'https://formspree.io/f/mlgqojlk';
   // ─────────────────────────────────────────────────────────────
+
+  // Live waitlist counter (free Abacus counter service).
+  // It quietly counts every sign-up; the number only *shows* once it passes
+  // WL_COUNT_MIN, so a small early figure is never displayed. Change WL_COUNT_MIN
+  // to control when it appears (or set it to 0 to always show).
+  var WL_COUNT_GET = 'https://abacus.jasoncameron.dev/get/tethar-com/waitlist';
+  var WL_COUNT_HIT = 'https://abacus.jasoncameron.dev/hit/tethar-com/waitlist';
+  var WL_COUNT_MIN = 25;
+  function showCount(n) {
+    if (typeof n !== 'number' || n < WL_COUNT_MIN) return;
+    document.querySelectorAll('.js-wl-count').forEach(function (el) { el.textContent = n.toLocaleString('en-GB'); });
+    document.querySelectorAll('.js-wl-counter').forEach(function (el) { el.hidden = false; });
+  }
+  if (document.querySelector('.js-wl-counter')) {
+    fetch(WL_COUNT_GET).then(function (r) { return r.json(); }).then(function (d) { showCount(d.value); }).catch(function () {});
+  }
+  function bumpCount() {
+    fetch(WL_COUNT_HIT).then(function (r) { return r.json(); }).then(function (d) { showCount(d.value); }).catch(function () {});
+  }
+
   // Any number of waitlist forms (hero + closing section) share this handler.
   function markJoined() { try { localStorage.setItem('tethar.waitlist.joined', '1'); } catch (e) {} }
   function scope(form) { return form.closest('.hero-waitlist-wrap, .cta-band') || form.parentElement; }
@@ -38,6 +58,7 @@
       var note = box.querySelector('.js-waitlist-note'); if (note) note.hidden = true;
       var ok = box.querySelector('.js-waitlist-success'); if (ok) ok.hidden = false;
       markJoined();
+      bumpCount();
     };
     form.addEventListener('submit', function (e) {
       e.preventDefault();
