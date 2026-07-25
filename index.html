@@ -25,7 +25,7 @@
 <meta name="twitter:description" content="Every feature, every child, one price. 30 days free, then £5 a month or £47.50 a year — cancel any time in Google Play.">
 <meta name="twitter:image" content="https://www.tethar.com/assets/img/og-image.png">
 <link rel="stylesheet" href="assets/css/fonts.css?v=1">
-<link rel="stylesheet" href="assets/css/styles.css?v=18">
+<link rel="stylesheet" href="assets/css/styles.css?v=19">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%2320b5b6' stroke-width='3'%3E%3Cellipse cx='18' cy='30' rx='11' ry='7' transform='rotate(-18 18 30)'/%3E%3Cellipse cx='29' cy='29' rx='7' ry='5.5' transform='rotate(20 29 29)'/%3E%3C/g%3E%3Cg fill='%2320b5b6'%3E%3Ccircle cx='16' cy='12' r='5.2'/%3E%3Ccircle cx='29' cy='16' r='3.7'/%3E%3Ccircle cx='38' cy='24' r='2.6'/%3E%3C/g%3E%3C/svg%3E">
@@ -152,6 +152,7 @@
           <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-label="Your email address">
           <button type="submit" class="btn btn-primary btn-lg">Join the waitlist</button>
         </form>
+        <p class="wl-counter js-wl-counter" hidden><span class="wl-dot"></span> <b class="js-wl-count"></b> parents already on the waitlist</p>
         <p class="hero-waitlist-note js-waitlist-note">First 500 parents get the founding offer · No spam — one email at launch.</p>
         <div class="wl-success js-waitlist-success" hidden>
           <p class="wl-success-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> You're on the list — your founding 45‑day free trial is reserved.</p>
@@ -166,24 +167,6 @@
       </ul>
     </div>
 
-    <div class="hero-visual reveal">
-      <div class="phone phone--shot phone-float">
-        <div class="phone-screen">
-          <img src="assets/img/app-parent-location.jpg" alt="The Tethar parent app showing app usage for the week and your child's location on a map." width="640" height="1387" fetchpriority="high" decoding="async">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ IN THE HEADLINES ============ -->
-<section class="media-strip" aria-label="Child online safety in the news">
-  <div class="container">
-    <span class="ms-label">Child online safety, in the headlines</span>
-    <a href="https://www.bbc.co.uk/news/articles/c5yzn2g0xw9o" target="_blank" rel="noopener">BBC News</a>
-    <a href="https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-to-protect-children-online" target="_blank" rel="noopener">Ofcom</a>
-    <a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10468/" target="_blank" rel="noopener">UK Parliament</a>
-    <a href="why-now.html">See the evidence →</a>
   </div>
 </section>
 
@@ -367,14 +350,14 @@
           </div>
         </div>
         <h3>Tethar for Children</h3>
-        <p>The child app lives on your child's phone in the background and quietly keeps it safe, whilst looking and feeling like a regular smartphone.</p>
+        <p>The child app lives on your child's phone in the background and quietly keeps it safe — while the phone still looks and feels like a regular smartphone. Unlike other parental controls, there are <strong>no apps covered in padlocks and no locked‑off screens</strong> that single your child out or leave them frustrated. It just feels like a normal phone.</p>
         <ul class="twoapp-list">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Shows only the apps you've approved</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Filters the web, keeping unsafe content off‑limits</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Bespoke daily screen-time — for the whole phone and by individual app</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Shares location and sends safe‑place alerts</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Lets your child request new apps in a tap</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Looks and feels like a regular smartphone</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Looks and feels like a regular smartphone — no padlock icons or blocked‑off apps</li>
         </ul>
         <a href="#waitlist" class="btn btn-primary" style="margin-top:24px">
           Join the waitlist
@@ -414,10 +397,24 @@
         <p>Config is easy to tweak whenever you need — adjust limits, apps and filters in a few taps to adapt to your child as they grow.</p>
       </div>
     </div>
-    <p class="center mt-l reveal" style="color:var(--text-soft);max-width:660px;margin-inline:auto">Both apps download free from Google Play. Your first 30 days are free — billing begins on day 31 via Google Play (£5 a month or £47.50 a year), and you can cancel any time in two taps.</p>
   </div>
 </section>
 
+<!-- ============ PRICING (summary) ============ -->
+<section class="section" id="pricing" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple, honest pricing</h2>
+      <p class="lead">Both apps download free from Google Play. Your first 30 days are free — billing begins on day 31 via Google Play (£5 a month or £47.50 a year), and you can cancel any time in two taps.</p>
+    </div>
+    <div class="center reveal">
+      <a href="pricing.html" class="btn btn-primary btn-lg">See full pricing
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
 
 <!-- ============ GROWS WITH YOUR CHILD ============ -->
 <section class="section">
@@ -457,7 +454,7 @@
           <h2>Safety that doesn't feel intrusive</h2>
           <p class="lead">We built Tethar because, as parents, we're aware of the dangers of smartphones and social media. Once children see something online, they cannot unsee it. We looked around for a tool that would keep our children safe and couldn't find anything that worked in the background while keeping the look and feel of a regular phone. Tethar protects in the background — the phone stays theirs, the reassurance stays yours.</p>
           <ul class="showcase-list">
-            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Looks like a normal phone</b><small>No obvious badges or locked-down home screens — it stays theirs.</small></div></li>
+            <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Looks like a normal phone</b><small>No padlocked apps or locked‑down screens that frustrate your child or mark the phone out — it just stays theirs.</small></div></li>
             <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>You choose the depth</b><small>Dial protection up for younger kids, back for teens earning trust.</small></div></li>
             <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Data stays private</b><small>Never sold or shared, and only ever visible to you.</small></div></li>
           </ul>
@@ -528,6 +525,7 @@
         <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-label="Your email address">
         <button type="submit" class="btn btn-primary btn-lg">Join the waitlist</button>
       </form>
+      <p class="wl-counter wl-counter--dark js-wl-counter" hidden><span class="wl-dot"></span> <b class="js-wl-count"></b> parents already on the waitlist</p>
       <p class="waitlist-note js-waitlist-note" id="waitlistNote">First 500 parents get the founding offer · No spam — one email at launch · Unsubscribe anytime.</p>
       <div class="wl-success js-waitlist-success" id="waitlistSuccess" hidden>
         <p class="wl-success-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> You're on the list — your founding 45‑day free trial is reserved.</p>
